@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Snake Game</title>
+ <style>
+ body {
+    background-image: url('/Images/.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+ }
+ .cell {
+    background-color: green;
+    border: 1px solid white;
+ }
+ .snake {
+    background-color: blue;
+ }
+ .food {
+    background-color: red;
+ }
+</style>
+</head>
+<body>
+ <canvas class="grid" id="snakeCanvas" width="500" height="500"></canvas>
+ <script src="snake.js"></script>
+</body>
+</html>
